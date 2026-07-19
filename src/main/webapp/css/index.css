@@ -1,0 +1,292 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 15px 40px;
+}
+
+.header {
+    background: #2d6a4f;
+    justify-content: space-between;
+    
+    padding: 15px 0;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.header .logo {
+    font-size: 28px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.header .nav {
+    float: right;
+    align-items: center;
+}
+
+.header .nav a {
+	align-items: center;
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.header .nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    padding: 90px 0;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    padding: 12px 30px;
+    background: #52b788;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background: #40916c;
+}
+
+.categories h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.cat-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.cat-box {
+    background: #d8f3dc;
+    padding: 25px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cat-box:hover {
+    background: #95d5b2;
+}
+
+.products {
+    margin-top: 40px;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    margin: 12px 0;
+    font-size: 20px;
+    color: #2d6a4f;
+}
+
+.product-card p {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.product-card button {
+    padding: 10px 15px;
+    background: #40916c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.product-card button:hover {
+    background: #2d6a4f;
+}
+
+
+.footer {
+    background: #2d6a4f;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    color: white;
+}
+
+
+.hero {
+    background: #f6f7f2;
+    padding: 80px 0;
+}
+
+.hero-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: black;
+}
+
+.hero-image img {
+    width: 450px;
+    max-width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* NAVBAR */
+.user-navbar {
+    background-color: #2f6f4e;   /* matches your image green */
+    height: 70px;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO / TITLE */
+.nav-logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* MENU */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 6px 8px;
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.nav-menu li a:hover {
+    text-decoration: underline;
+}
+
+/* LOGOUT */
+.logout {
+    font-weight: bold;
+}
+
+/* PAGE CONTENT (demo) */
+.page-content {
+    padding: 30px;
+}
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 60px;
+  background: #c0c0c0;
+  margin-bottom: 80px;
+  
+}
+
+.feature-box {
+  text-align: center;
+}
+
+.products {
+  margin-top: -30px;
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.product-card {
+  background: #eaeaea;
+  padding: 25px;
+  border: 2px dotted;
+  border-radius: 15px;
+}
+
+
+
+.images {
+	width: 200px;
+	height: 210px;
+	
+}
+
+/* PAGE CONTENT (demo) */
+.page-content {
+    padding: 30px;
+}

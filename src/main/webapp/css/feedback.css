@@ -1,0 +1,128 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BACKGROUND */
+body {
+   
+    background: whitesmoke;
+    margin-left:10s px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MAIN WRAPPER */
+.feedback-wrapper {
+	
+    background: white;
+    color:black;
+    margin-left: 250px;
+    margin-top: 100px;
+    width: 900px;
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* LEFT INFO */
+.feedback-info {
+    width: 50%;
+    background-color: #c8e6c9;
+    color: black;
+    padding: 40px;
+}
+
+.feedback-info h1 {
+    margin-bottom: 15px;
+}
+
+.feedback-info p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.feedback-info ul {
+    list-style: none;
+}
+
+.feedback-info ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* RIGHT FORM */
+.feedback-form-box {
+    width: 50%;
+    padding: 40px;
+}
+
+.feedback-form-box h2 {
+    color: #2e7d32;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* FORM ELEMENTS */
+.feedback-form-box label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.feedback-form-box input,
+.feedback-form-box select,
+.feedback-form-box textarea {
+	  justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.feedback-form-box input:focus,
+.feedback-form-box select:focus,
+.feedback-form-box textarea:focus {
+    outline: none;
+    border-color: #4caf50;
+}
+
+/* BUTTON */
+.feedback-form-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2e7d32;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.feedback-form-box button:hover {
+    background-color: #1b5e20;
+}
+
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color:  #2f6f4e;
+    color: white;
+    margin-top: 100px;
+}
+.box p{
+	
+	color: white;
+	text-decoration: none;
+	
+}

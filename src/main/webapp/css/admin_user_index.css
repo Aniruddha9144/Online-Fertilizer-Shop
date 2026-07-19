@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Georgia", serif;
+    background-color: #f7f7f2;
+}
+
+.login-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 60px;
+    box-sizing: border-box;
+}
+
+.login-content {
+    max-width: 50%;
+}
+
+.login-content h1 {
+    font-size: 48px;
+    color: #1f2d16;
+    margin-bottom: 15px;
+}
+
+.login-content p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.login-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 14px 32px;
+    font-size: 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.user-btn {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.user-btn:hover {
+    background-color: #3e8e41;
+}
+
+.admin-btn {
+    background-color: #6b8e23;
+    color: #fff;
+}
+
+.admin-btn:hover {
+    background-color: #556b2f;
+}
+
+.login-image img {
+    max-width: 420px;
+    border-radius: 12px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.logout {
+    font-weight: bold;
+}
+
+.page-content {
+    padding: 30px;
+}
+
+.product-section {
+    padding: 60px 10%;
+    margin-top: -100px;  
+    text-align: center;
+    background: #e0e0e0;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: #1f3d1f;
+}
+
+/* Container */
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+
+/* Product Card (No Background Box) */
+.product-card {
+    width: 250px;
+    transition: 0.6s ease;
+}
+
+/* Square Image */
+.product-card img {
+    width: 290px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+    margin-bottom: 15px;
+    transition: 0.4s ease;
+}
+
+/* Hover Zoom Effect */
+.product-card img:hover {
+    transform: scale(1.05);
+}
+
+/* Title */
+.product-card h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+/* Description */
+.product-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ===== Scroll Animation ===== */
+
+/* Hidden initially */
+.product-card {
+    opacity: 0;
+    transform: translateY(80px);
+}
+
+/* When visible */
+.product-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.footer {
+    background: #2d6a4f;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+
+

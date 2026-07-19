@@ -1,0 +1,60 @@
+@charset "UTF-8";/* Admin Navbar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.admin-navbar {
+    display: flex;
+    height:70px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d6a4f;
+    padding: 8px 20px;   /* 🔹 Navbar height kami keli */
+}
+
+.logo h2 {
+    color: #fff;
+    font-size: 20px;   /* 🔹 Logo text size kami */
+}
+
+.logo i {
+    margin-right: 6px;
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 12px;   /* 🔹 Options madhla gap kami */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;   /* 🔹 Text size kami */
+    padding: 5px 8px;  /* 🔹 Button size kami */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;   /* 🔹 Icon ani text madhla gap kami */
+    transition: 0.3s ease;
+}
+
+.nav-links a i {
+    font-size: 13px;  /* 🔹 Icon size kami */
+}
+
+.nav-links a:hover {
+    background-color: #256528;
+}
+
+.logout {
+    background-color: #d32f2f;
+    padding: 5px 10px;
+}
+
+.logout:hover {
+    background-color: #b71c1c;
+}

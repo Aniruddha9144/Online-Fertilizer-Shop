@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:  #2d6a4f;
+    padding: 15px 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    gap: 10px;
+}
+
+.logo i {
+    font-size: 24px;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+/* Links */
+.nav-links li a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+/* Hover Effect */
+.nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Logout Special Style */
+.logout {
+    background-color: #c62828;
+    padding: 8px 14px;
+}
+
+.logout:hover {
+    background-color: #b71c1c;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+

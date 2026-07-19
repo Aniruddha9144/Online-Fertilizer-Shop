@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="feedback" language="groovy" pageWidth="1000" pageHeight="595" orientation="Landscape" columnWidth="960" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="bdbc999b-717c-4ca8-b87b-774901690ef4">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="197"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     feedback.`feedback_id` AS feedback_feedback_id,
+     feedback.`full_name` AS feedback_full_name,
+     feedback.`email` AS feedback_email,
+     feedback.`product` AS feedback_product,
+     feedback.`rating` AS feedback_rating,
+     feedback.`message` AS feedback_message,
+     feedback.`c_date` AS feedback_c_date
+FROM
+     `feedback` feedback]]>
+	</queryString>
+	<field name="feedback_feedback_id" class="java.lang.Integer"/>
+	<field name="feedback_full_name" class="java.lang.String"/>
+	<field name="feedback_email" class="java.lang.String"/>
+	<field name="feedback_product" class="java.lang.String"/>
+	<field name="feedback_rating" class="java.lang.String"/>
+	<field name="feedback_message" class="java.lang.String"/>
+	<field name="feedback_c_date" class="java.sql.Timestamp"/>
+	<group name="feedback_feedback_id">
+		<groupExpression><![CDATA[$F{feedback_feedback_id}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="960" height="79" uuid="d54b7e8d-6a4e-4817-bdce-d606687f8739"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="429" y="27" width="142" height="30" forecolor="#FF0000" uuid="7c049459-c796-41aa-bdc6-f98fda041427"/>
+				<textElement>
+					<font fontName="Algerian" size="14"/>
+				</textElement>
+				<text><![CDATA[feedback_list]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="137" height="20" uuid="7be1e079-3efb-44ba-86ea-49823a765f51"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[feedback_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="137" y="0" width="137" height="20" uuid="58bb3771-f5df-47c1-a8c8-2f244e63904f"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[full_name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="274" y="0" width="137" height="20" uuid="2c12d845-8d30-4ce0-a1a4-7be9450a79fe"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="411" y="0" width="137" height="20" uuid="01f16174-3efa-42a4-aa4d-09d90047d57d"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[product]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="548" y="0" width="137" height="20" uuid="6797139c-0091-4878-9486-d2ec85dbe7d8"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[rating]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="685" y="0" width="137" height="20" uuid="e952ac44-0756-4161-a38e-44791ae1de85"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[message]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="822" y="0" width="137" height="20" uuid="157416b5-683e-4372-8fdf-caa0a146f1f0"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[c_date]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="46" width="959" height="1" uuid="a13e9edf-34e3-42ff-987b-57edc6661d60"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="34" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="137" height="20" uuid="ba51bd63-c232-4cce-8d0c-555e49066e1f"/>
+				<textFieldExpression><![CDATA[$F{feedback_feedback_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="137" y="0" width="137" height="20" uuid="1fb755b1-985a-4791-8091-713568ae3bc7"/>
+				<textFieldExpression><![CDATA[$F{feedback_full_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="274" y="0" width="137" height="20" uuid="6d288808-4e44-4aec-9bf3-157245d96206"/>
+				<textFieldExpression><![CDATA[$F{feedback_email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="411" y="0" width="137" height="20" uuid="7a3f0d8d-0afd-4890-8db8-92a7b086e4f4"/>
+				<textFieldExpression><![CDATA[$F{feedback_product}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="548" y="0" width="137" height="20" uuid="0e6f9e9d-3d50-486c-8158-e8e9af0fc746"/>
+				<textFieldExpression><![CDATA[$F{feedback_rating}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="685" y="0" width="137" height="20" uuid="76fa696c-0d9b-43e0-b98a-a5bc7ae7baf3"/>
+				<textFieldExpression><![CDATA[$F{feedback_message}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="822" y="0" width="137" height="20" uuid="8866b8af-1378-4882-8207-8982f467ba99"/>
+				<textFieldExpression><![CDATA[$F{feedback_c_date}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="25" width="959" height="1" uuid="e83a66e7-c3ff-4d21-8c15-f0f8ef23c395"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="8" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="7" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="5" splitType="Stretch"/>
+	</summary>
+</jasperReport>

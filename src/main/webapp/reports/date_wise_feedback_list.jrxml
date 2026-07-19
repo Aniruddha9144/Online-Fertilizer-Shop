@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="date_wise_feedback_list" language="groovy" pageWidth="1000" pageHeight="595" orientation="Landscape" columnWidth="960" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f8320325-e366-4e9a-9f26-603975450f89">
+	<property name="ireport.zoom" value="1.263617571248236"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="164"/>
+	<parameter name="date" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     feedback.`feedback_id` AS feedback_feedback_id,
+     feedback.`full_name` AS feedback_full_name,
+     feedback.`email` AS feedback_email,
+     feedback.`product` AS feedback_product,
+     feedback.`rating` AS feedback_rating,
+     feedback.`message` AS feedback_message,
+     feedback.`c_date` AS feedback_c_date
+FROM
+     `feedback` feedback
+
+where
+c_date = $P{date};]]>
+	</queryString>
+	<field name="feedback_feedback_id" class="java.lang.Integer"/>
+	<field name="feedback_full_name" class="java.lang.String"/>
+	<field name="feedback_email" class="java.lang.String"/>
+	<field name="feedback_product" class="java.lang.String"/>
+	<field name="feedback_rating" class="java.lang.String"/>
+	<field name="feedback_message" class="java.lang.String"/>
+	<field name="feedback_c_date" class="java.sql.Timestamp"/>
+	<group name="feedback_feedback_id">
+		<groupExpression><![CDATA[$F{feedback_feedback_id}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="960" height="79" uuid="995ff656-5bfb-4c29-9055-9e442a7e4877"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="343" y="25" width="177" height="20" forecolor="#FF3333" uuid="855ac29e-64bc-4dbc-bae2-fbd85687a5c3"/>
+				<textElement>
+					<font size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[date wise feedback list]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="137" height="20" uuid="8a0286df-f059-4736-a7ac-3d44e6c7d2ed"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Feedbacl Back]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="137" y="0" width="137" height="20" uuid="cadaf279-e890-49c5-9584-2e0c957158c5"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Full Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="274" y="0" width="137" height="20" uuid="f2ddd040-57e0-411b-88aa-f20aa6fba543"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="411" y="0" width="137" height="20" uuid="82769fd8-3c4b-4f22-bfc7-b84bdeaa8a11"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Product]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="548" y="0" width="137" height="20" uuid="0024f84b-0729-4435-9994-3b54a7d273b4"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Rating]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="685" y="0" width="137" height="20" uuid="ad429b2d-4615-4d3f-8c98-8791c19d72fd"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Message]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="822" y="0" width="137" height="20" uuid="0115c6ad-45fb-4624-b1c3-65cd408cec12"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Current Date]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="26" width="959" height="1" uuid="7423a1db-80ea-46a2-9787-c5531a9ad181"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="45" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="137" height="20" uuid="fce540d8-8bbe-4e8d-a8de-dd3c141e6cef"/>
+				<textFieldExpression><![CDATA[$F{feedback_feedback_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="137" y="0" width="137" height="20" uuid="1c22e961-30db-4bca-8521-3b2a05709f0b"/>
+				<textFieldExpression><![CDATA[$F{feedback_full_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="274" y="0" width="137" height="20" uuid="62742363-d90d-4682-83b4-f24ced03c224"/>
+				<textFieldExpression><![CDATA[$F{feedback_email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="411" y="0" width="137" height="20" uuid="b980161c-9984-45c9-8a26-f710d83e403a"/>
+				<textFieldExpression><![CDATA[$F{feedback_product}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="548" y="0" width="137" height="20" uuid="0cfdaa42-faf9-42a5-bdb7-005e3231b411"/>
+				<textFieldExpression><![CDATA[$F{feedback_rating}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="685" y="0" width="137" height="20" uuid="fc836756-e701-4ca9-a1ce-fb9d9e7512b9"/>
+				<textFieldExpression><![CDATA[$F{feedback_message}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="822" y="0" width="137" height="20" uuid="d4377844-556c-47d5-a2fd-6ae7ed2b4ad4"/>
+				<textFieldExpression><![CDATA[$F{feedback_c_date}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="32" width="959" height="1" uuid="d69c29e4-b2c4-4a5b-9711-73268845a844"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

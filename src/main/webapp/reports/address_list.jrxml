@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="address_list" language="groovy" pageWidth="1000" pageHeight="595" orientation="Landscape" columnWidth="960" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f292abd2-fe04-4ee1-bb82-eaa3b8bb097c">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     shipping_address.`product_id` AS shipping_address_product_id,
+     shipping_address.`full_name` AS shipping_address_full_name,
+     shipping_address.`mobile` AS shipping_address_mobile,
+     shipping_address.`email` AS shipping_address_email,
+     shipping_address.`address` AS shipping_address_address,
+     shipping_address.`city` AS shipping_address_city,
+     shipping_address.`state` AS shipping_address_state,
+     shipping_address.`pincode` AS shipping_address_pincode,
+     shipping_address.`country` AS shipping_address_country,
+     shipping_address.`user_id` AS shipping_address_user_id
+FROM
+     `shipping_address` shipping_address]]>
+	</queryString>
+	<field name="shipping_address_product_id" class="java.lang.Integer"/>
+	<field name="shipping_address_full_name" class="java.lang.String"/>
+	<field name="shipping_address_mobile" class="java.lang.String"/>
+	<field name="shipping_address_email" class="java.lang.String"/>
+	<field name="shipping_address_address" class="java.lang.String"/>
+	<field name="shipping_address_city" class="java.lang.String"/>
+	<field name="shipping_address_state" class="java.lang.String"/>
+	<field name="shipping_address_pincode" class="java.lang.String"/>
+	<field name="shipping_address_country" class="java.lang.String"/>
+	<field name="shipping_address_user_id" class="java.lang.String"/>
+	<group name="shipping_address_product_id">
+		<groupExpression><![CDATA[$F{shipping_address_product_id}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="68" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="-10" width="960" height="78" uuid="93306841-8942-49cd-8c44-aa7882fc80f6"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="452" y="12" width="124" height="32" forecolor="#FF0000" uuid="4f819ffd-2dc7-44dc-858c-47b9cbb0f292"/>
+				<textElement>
+					<font fontName="SansSerif" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Address List]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="96" height="20" uuid="55f04ce7-975c-42a6-b90c-3d1fdd71943d"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[product_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="96" y="0" width="96" height="20" uuid="6cbdb30d-6d34-437b-a51d-b6a4c09c74c4"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[full_name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="192" y="0" width="96" height="20" uuid="6652713c-8ba1-4646-a55a-62be6642ff26"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[mobile]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="288" y="0" width="96" height="20" uuid="6626b2e0-4715-4a38-957d-c3ff9c142457"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="384" y="0" width="96" height="20" uuid="7282c5ed-4907-40d0-abd9-f3c26ab6a617"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="0" width="96" height="20" uuid="367d2866-2acc-42c4-955c-7559e5d2896f"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[city]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="576" y="0" width="96" height="20" uuid="e6bf7b50-1dac-430c-8a18-376e79cd508a"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[state]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="672" y="0" width="96" height="20" uuid="874f105f-09c0-4188-8c4e-a1eb4df36cc1"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[pincode]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="768" y="0" width="96" height="20" uuid="bc30f1ca-dde3-4d63-9237-57be569cfd91"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[country]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="864" y="0" width="96" height="20" uuid="a5133af6-e98d-47c0-9778-a190cc82d15c"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[user_id]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="38" width="960" height="1" uuid="036d521f-d7f4-4ab5-b989-9073b6ed4ad4"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="38" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="96" height="20" uuid="d7b07279-a4a3-4f55-a501-4ff4e4fb78dc"/>
+				<textFieldExpression><![CDATA[$F{shipping_address_product_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="96" y="0" width="96" height="20" uuid="6c58cbff-96c3-448a-a534-c7bd784edc54"/>
+				<textFieldExpression><![CDATA[$F{shipping_address_full_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="192" y="0" width="96" height="20" uuid="c4d6bb72-51cf-420f-9e93-0ccb069d1adb"/>
+				<textFieldExpression><![CDATA[$F{shipping_address_mobile}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="288" y="0" width="96" height="20" uuid="acbc5eab-dc6d-4fa8-9ca8-3ea1219c8fec"/>
+				<textFieldExpression><![CDATA[$F{shipping_address_email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="384" y="0" width="96" height="20" uuid="11cdb364-72f0-4ed2-9271-9ff862d2cfbb"/>
+				<textFieldExpression><![CDATA[$F{shipping_address_address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="480" y="0" width="96" height="20" uuid="63e05cdd-fa7b-452e-925e-c93640726483"/>
+				<textFieldExpression><![CDATA[$F{shipping_address_city}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="576" y="0" width="96" height="20" uuid="7b27619d-4596-4c48-8197-ebc71753d1a1"/>
+				<textFieldExpression><![CDATA[$F{shipping_address_state}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="672" y="0" width="96" height="20" uuid="a7d9db9e-6805-435b-a5c3-e52e8b74bf5b"/>
+				<textFieldExpression><![CDATA[$F{shipping_address_pincode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="768" y="0" width="96" height="20" uuid="633a985f-0a96-4d23-9ebe-2085e91eda31"/>
+				<textFieldExpression><![CDATA[$F{shipping_address_country}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="864" y="0" width="96" height="20" uuid="70dd4de2-011a-425d-abc6-849bc4920874"/>
+				<textFieldExpression><![CDATA[$F{shipping_address_user_id}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="31" width="960" height="1" uuid="368dc217-3a14-46d5-87bd-cfcd7a99815b"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="6" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="4" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="3" splitType="Stretch"/>
+	</summary>
+</jasperReport>

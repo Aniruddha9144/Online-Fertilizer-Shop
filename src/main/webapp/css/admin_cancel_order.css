@@ -1,0 +1,151 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+}
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+.sidebar {
+    width: 220px;
+    background-color: #2f7d32;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+}
+
+.sidebar ul li.active a,
+.sidebar ul li a:hover {
+    background-color: #1b5e20;
+}
+
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+
+.header {
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: #333;
+}
+
+
+.table-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #e8f5e9;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    color: #2f7d32;
+}
+
+
+.status {
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 13px;
+    color: white;
+}
+
+.pending {
+    background-color: #f9a825;
+}
+
+.delivered {
+    background-color: #2e7d32;
+}
+
+.cancelled {
+    background-color: #c62828;
+}
+
+
+.view {
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.approve {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.view:hover {
+    background-color: #0d47a1;
+}
+
+.approve:hover {
+    background-color: #1b5e20;
+}
+
+.footer {
+    background: #2d6a4f;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}

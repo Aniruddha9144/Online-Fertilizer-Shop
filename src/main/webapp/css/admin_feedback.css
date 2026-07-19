@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BODY */
+body {
+    background-color: whitesmoke;
+}
+
+/* CONTAINER */
+.container {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* HEADING */
+h2 {
+    margin-bottom: 5px;
+    font-size: 26px;
+    color: #2f6f4e;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+/* FEEDBACK GRID */
+.feedback-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+/* FEEDBACK CARD */
+.feedback-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    width: 55%;
+    text-align: left;
+    transition: 0.3s ease;
+}
+
+.feedback-card:hover {
+    transform: translateY(-5px);
+}
+
+/* LABEL */
+.name {
+    font-weight: bold;
+    font-size: 15px;
+    color: #2f6f4e;
+}
+
+/* VALUE TEXT */
+.email {
+    font-size: 14px;
+    color: #333;
+}
+
+/* FOOTER */
+.footer {
+    background: #2d6a4f;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .feedback-card {
+        width: 90%;
+    }
+}

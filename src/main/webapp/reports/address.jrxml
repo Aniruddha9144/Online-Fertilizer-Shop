@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="address" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="107d144f-49d1-4227-a4a2-dd34a29d8a7a">
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     shipping_address.`product_id` AS shipping_address_product_id,
+     shipping_address.`full_name` AS shipping_address_full_name,
+     shipping_address.`mobile` AS shipping_address_mobile,
+     shipping_address.`email` AS shipping_address_email,
+     shipping_address.`address` AS shipping_address_address,
+     shipping_address.`city` AS shipping_address_city,
+     shipping_address.`state` AS shipping_address_state,
+     shipping_address.`pincode` AS shipping_address_pincode,
+     shipping_address.`country` AS shipping_address_country,
+     shipping_address.`user_id` AS shipping_address_user_id
+FROM
+     `shipping_address` shipping_address]]>
+	</queryString>
+	<field name="shipping_address_product_id" class="java.lang.Integer"/>
+	<field name="shipping_address_full_name" class="java.lang.String"/>
+	<field name="shipping_address_mobile" class="java.lang.String"/>
+	<field name="shipping_address_email" class="java.lang.String"/>
+	<field name="shipping_address_address" class="java.lang.String"/>
+	<field name="shipping_address_city" class="java.lang.String"/>
+	<field name="shipping_address_state" class="java.lang.String"/>
+	<field name="shipping_address_pincode" class="java.lang.String"/>
+	<field name="shipping_address_country" class="java.lang.String"/>
+	<field name="shipping_address_user_id" class="java.lang.String"/>
+	<group name="shipping_address_product_id">
+		<groupExpression><![CDATA[$F{shipping_address_product_id}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

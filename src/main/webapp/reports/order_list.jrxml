@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="order_list" language="groovy" pageWidth="1000" pageHeight="595" orientation="Landscape" columnWidth="960" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a7cee6ca-9678-44c3-8ce1-8017c8431f4a">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="16"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     user_order.`order_id` AS user_order_order_id,
+     user_order.`user_id` AS user_order_user_id,
+     user_order.`product_name` AS user_order_product_name,
+     user_order.`product_image` AS user_order_product_image,
+     user_order.`price` AS user_order_price,
+     user_order.`quantity` AS user_order_quantity,
+     user_order.`total` AS user_order_total,
+     user_order.`full_name` AS user_order_full_name,
+     user_order.`mobile` AS user_order_mobile,
+     user_order.`email` AS user_order_email,
+     user_order.`address` AS user_order_address,
+     user_order.`status` AS user_order_status,
+     user_order.`pay_date` AS user_order_pay_date,
+     user_order.`delevery_date` AS user_order_delevery_date
+FROM
+     `user_order` user_order]]>
+	</queryString>
+	<field name="user_order_order_id" class="java.lang.Integer"/>
+	<field name="user_order_user_id" class="java.lang.Integer"/>
+	<field name="user_order_product_name" class="java.lang.String"/>
+	<field name="user_order_product_image" class="java.lang.String"/>
+	<field name="user_order_price" class="java.lang.String"/>
+	<field name="user_order_quantity" class="java.lang.Integer"/>
+	<field name="user_order_total" class="java.lang.String"/>
+	<field name="user_order_full_name" class="java.lang.String"/>
+	<field name="user_order_mobile" class="java.lang.String"/>
+	<field name="user_order_email" class="java.lang.String"/>
+	<field name="user_order_address" class="java.lang.String"/>
+	<field name="user_order_status" class="java.lang.String"/>
+	<field name="user_order_pay_date" class="java.lang.String"/>
+	<field name="user_order_delevery_date" class="java.lang.String"/>
+	<group name="user_order_order_id">
+		<groupExpression><![CDATA[$F{user_order_order_id}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<rectangle>
+				<reportElement x="-8" y="0" width="960" height="79" uuid="c312b670-143f-4608-b88f-cf8c61e61a43"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="444" y="31" width="100" height="20" forecolor="#FF0000" uuid="93f4702f-37f9-4ed2-9a57-971eae353471"/>
+				<textElement>
+					<font fontName="Algerian" size="14"/>
+				</textElement>
+				<text><![CDATA[order_list]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="68" height="20" uuid="b5bdfde6-ad72-438c-9f69-bcf90c65d478"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[order_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="68" y="0" width="68" height="20" uuid="d1f52475-df47-4d86-a53e-9496fbf1e948"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[user_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="136" y="0" width="68" height="20" uuid="e5010007-a6a9-437f-8d75-acb8c13b7d9a"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[product_name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="204" y="0" width="68" height="20" uuid="e19b303b-2d36-4c53-975b-5b0dde941973"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[product_image]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="272" y="0" width="68" height="20" uuid="13e7c49d-8ed1-48c0-9e25-81535fb8d963"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="0" width="68" height="20" uuid="76d6b0df-a032-451b-aa79-942174ab745d"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[quantity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="408" y="0" width="68" height="20" uuid="defc0657-5bd9-4382-956c-8a882c89815c"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="476" y="0" width="68" height="20" uuid="d7baedf2-fd74-4ea0-9b83-8eb58e26fbf3"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[full_name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="544" y="0" width="68" height="20" uuid="60eb2682-66e4-4343-9875-ec1adfa99ef6"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[mobile]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="612" y="0" width="68" height="20" uuid="f7b15f49-7731-400e-b5cf-025d41433bfd"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="680" y="0" width="68" height="20" uuid="30435c30-fcf1-4011-bedc-363f645c34f6"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="748" y="0" width="68" height="20" uuid="6bc3838b-1ac1-4221-b148-65a942432483"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[status]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="816" y="0" width="68" height="20" uuid="45b9f6f3-6e69-4275-8152-b8e92ea66a5b"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[pay_date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="884" y="0" width="68" height="20" uuid="af8e54cf-f20f-402d-ab29-b6f867bc4050"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[delevery_date]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="27" width="960" height="1" uuid="0152a0f0-a91b-4ad0-a8bc-4ae2b72943b6"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="35" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="68" height="20" uuid="ba59e13a-1b73-4443-8882-fdd14d82f1c8"/>
+				<textFieldExpression><![CDATA[$F{user_order_order_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="68" y="0" width="68" height="20" uuid="1209780f-774e-4183-bfc4-fc9a89e2a674"/>
+				<textFieldExpression><![CDATA[$F{user_order_user_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="136" y="0" width="68" height="20" uuid="2afee34a-3f60-42fc-9225-b547be7e7164"/>
+				<textFieldExpression><![CDATA[$F{user_order_product_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="204" y="0" width="68" height="20" uuid="08c4a5cf-615a-4ed5-9f02-a07a040c6278"/>
+				<textFieldExpression><![CDATA[$F{user_order_product_image}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="272" y="0" width="68" height="20" uuid="ba5ca7e5-e255-4af1-beae-cf29d160fa17"/>
+				<textFieldExpression><![CDATA[$F{user_order_price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="0" width="68" height="20" uuid="4b24c743-0d4d-4e46-b869-2a24daf64e52"/>
+				<textFieldExpression><![CDATA[$F{user_order_quantity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="408" y="0" width="68" height="20" uuid="05e3a510-1e70-4895-ab15-855cb6d9c2f4"/>
+				<textFieldExpression><![CDATA[$F{user_order_total}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="476" y="0" width="68" height="20" uuid="4c0ec333-82f3-4d55-b34a-36b1adaf6c8b"/>
+				<textFieldExpression><![CDATA[$F{user_order_full_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="544" y="0" width="68" height="20" uuid="24c106e0-7a38-48dc-9e24-257cfb399aaa"/>
+				<textFieldExpression><![CDATA[$F{user_order_mobile}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="612" y="0" width="68" height="20" uuid="e20735af-696e-4a81-9607-168d381ea2dc"/>
+				<textFieldExpression><![CDATA[$F{user_order_email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="680" y="0" width="68" height="20" uuid="0c70f3e4-6f89-479b-ae13-6fe6aa13ed72"/>
+				<textFieldExpression><![CDATA[$F{user_order_address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="748" y="0" width="68" height="20" uuid="02905299-052a-4221-a67c-77d3c940622b"/>
+				<textFieldExpression><![CDATA[$F{user_order_status}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="816" y="0" width="68" height="20" uuid="d9e0b9c3-33c0-4e29-ad95-4d2a6753420e"/>
+				<textFieldExpression><![CDATA[$F{user_order_pay_date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="884" y="0" width="68" height="20" uuid="b1133b38-6c5e-40e6-b56c-835c4b475aa6"/>
+				<textFieldExpression><![CDATA[$F{user_order_delevery_date}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="31" width="960" height="1" uuid="c341d697-e47f-4511-9dc1-abc1f55cb1ff"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="5" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="5" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="4" splitType="Stretch"/>
+	</summary>
+</jasperReport>

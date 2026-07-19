@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="851946c7-bbd9-4f30-8b93-29b96a05a158">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="16"/>
+	<parameter name="id" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     shipping_address.`product_id` AS shipping_address_product_id,
+     shipping_address.`full_name` AS shipping_address_full_name,
+     shipping_address.`mobile` AS shipping_address_mobile,
+     shipping_address.`email` AS shipping_address_email,
+     shipping_address.`address` AS shipping_address_address,
+     shipping_address.`city` AS shipping_address_city,
+     shipping_address.`state` AS shipping_address_state,
+     shipping_address.`pincode` AS shipping_address_pincode,
+     shipping_address.`country` AS shipping_address_country,
+     shipping_address.`user_id` AS shipping_address_user_id
+FROM
+     `shipping_address` shipping_address
+where
+      product_id = $P{id};]]>
+	</queryString>
+	<field name="shipping_address_product_id" class="java.lang.Integer"/>
+	<field name="shipping_address_full_name" class="java.lang.String"/>
+	<field name="shipping_address_mobile" class="java.lang.String"/>
+	<field name="shipping_address_email" class="java.lang.String"/>
+	<field name="shipping_address_address" class="java.lang.String"/>
+	<field name="shipping_address_city" class="java.lang.String"/>
+	<field name="shipping_address_state" class="java.lang.String"/>
+	<field name="shipping_address_pincode" class="java.lang.String"/>
+	<field name="shipping_address_country" class="java.lang.String"/>
+	<field name="shipping_address_user_id" class="java.lang.String"/>
+	<group name="shipping_address_product_id">
+		<groupExpression><![CDATA[$F{shipping_address_product_id}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="80" height="20" uuid="a07a1032-cd37-4fb2-9b58-d948027660f3"/>
+				<text><![CDATA[shipping_address_product_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="0" width="80" height="20" uuid="51cb42a7-fce6-4e4a-b569-903c6f15a9c2"/>
+				<text><![CDATA[shipping_address_full_name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="0" width="80" height="20" uuid="1d3bc631-ac83-4bc1-8f9b-d43ad931dd46"/>
+				<text><![CDATA[shipping_address_mobile]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="0" width="80" height="20" uuid="9c640754-2b3f-4071-9cdf-622fa221d9cf"/>
+				<text><![CDATA[shipping_address_email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="0" width="80" height="20" uuid="4eb4e3f3-d7e1-4ad0-b0fa-6488f1ce8bda"/>
+				<text><![CDATA[shipping_address_address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="0" width="80" height="20" uuid="06677794-0ad8-43ca-8aa3-354800c5d7f3"/>
+				<text><![CDATA[shipping_address_city]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="0" width="80" height="20" uuid="763eb132-fbc7-4c0b-af76-61e63fc284d8"/>
+				<text><![CDATA[shipping_address_state]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="560" y="0" width="80" height="20" uuid="25727c66-bbac-4eb6-b5cf-365fdbaa978a"/>
+				<text><![CDATA[shipping_address_pincode]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="640" y="0" width="80" height="20" uuid="6b0e0bed-5ce8-44ec-b7dd-c600c22e9be0"/>
+				<text><![CDATA[shipping_address_country]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="720" y="0" width="80" height="20" uuid="aaa1d4ea-c9c2-4865-a08a-0c151dfd0f63"/>
+				<text><![CDATA[shipping_address_user_id]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="29" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="80" height="20" uuid="d3e03621-3ff0-421c-bc5a-c4f8d826a785"/>
+				<textFieldExpression><![CDATA[$F{shipping_address_product_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="0" width="80" height="20" uuid="5a65f420-c394-4efc-bf25-e66acc947714"/>
+				<textFieldExpression><![CDATA[$F{shipping_address_full_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="0" width="80" height="20" uuid="a2be35e2-6ad1-4c36-9459-64584c74d7ac"/>
+				<textFieldExpression><![CDATA[$F{shipping_address_mobile}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="0" width="80" height="20" uuid="8d0868b8-3db6-468e-97f6-515d4167fff5"/>
+				<textFieldExpression><![CDATA[$F{shipping_address_email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="0" width="80" height="20" uuid="04ae2e7d-deff-4884-9057-e12859548fc3"/>
+				<textFieldExpression><![CDATA[$F{shipping_address_address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="0" width="80" height="20" uuid="6fd48c3e-a513-4f33-91cf-da94065da97c"/>
+				<textFieldExpression><![CDATA[$F{shipping_address_city}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="480" y="0" width="80" height="20" uuid="8f19b0c7-3361-41bd-81dd-f31a2b9d3ccf"/>
+				<textFieldExpression><![CDATA[$F{shipping_address_state}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="0" width="80" height="20" uuid="4e498d1d-972b-47c4-b244-ec737fa5000c"/>
+				<textFieldExpression><![CDATA[$F{shipping_address_pincode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="640" y="0" width="80" height="20" uuid="a7553476-dab4-4772-9b68-5f4d594df330"/>
+				<textFieldExpression><![CDATA[$F{shipping_address_country}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="720" y="0" width="80" height="20" uuid="78def7bf-9a48-45fe-8f90-1b8527c0b44c"/>
+				<textFieldExpression><![CDATA[$F{shipping_address_user_id}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="14" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

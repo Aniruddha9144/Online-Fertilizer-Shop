@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="register_list1" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="eccbe359-4f03-485c-aa62-a3cb5a9da738">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     user_register.`user_id` AS user_register_user_id,
+     user_register.`username` AS user_register_username,
+     user_register.`contact` AS user_register_contact,
+     user_register.`email` AS user_register_email,
+     user_register.`address` AS user_register_address,
+     user_register.`password` AS user_register_password
+FROM
+     `user_register` user_register]]>
+	</queryString>
+	<field name="user_register_user_id" class="java.lang.Integer"/>
+	<field name="user_register_username" class="java.lang.String"/>
+	<field name="user_register_contact" class="java.lang.String"/>
+	<field name="user_register_email" class="java.lang.String"/>
+	<field name="user_register_address" class="java.lang.String"/>
+	<field name="user_register_password" class="java.lang.String"/>
+	<group name="user_register_user_id">
+		<groupExpression><![CDATA[$F{user_register_user_id}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="133" height="20" uuid="381513e6-019d-42f3-aa58-d1c0d33a1c64"/>
+				<text><![CDATA[user_register_user_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="133" y="0" width="133" height="20" uuid="4387ba9f-1917-47ad-97f7-1cefd552baaa"/>
+				<text><![CDATA[user_register_username]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="266" y="0" width="133" height="20" uuid="e297ec45-3e54-4209-a29a-00160f459c09"/>
+				<text><![CDATA[user_register_contact]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="399" y="0" width="133" height="20" uuid="fb3f2e6b-e918-44a9-99e6-652b714ca6d0"/>
+				<text><![CDATA[user_register_email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="532" y="0" width="133" height="20" uuid="1721f4d2-1bbe-40a7-9719-618143bb40e5"/>
+				<text><![CDATA[user_register_address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="665" y="0" width="133" height="20" uuid="f69ec875-5678-44ee-bc05-49aa573e66a7"/>
+				<text><![CDATA[user_register_password]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="133" height="20" uuid="1fb9299c-3476-4dae-9d3e-6deb92254d7a"/>
+				<textFieldExpression><![CDATA[$F{user_register_user_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="133" y="0" width="133" height="20" uuid="a5216b77-00c7-4038-89c5-6eab45cacac7"/>
+				<textFieldExpression><![CDATA[$F{user_register_username}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="266" y="0" width="133" height="20" uuid="9159fce4-8a9d-4b29-aa84-d9f6b8457c7a"/>
+				<textFieldExpression><![CDATA[$F{user_register_contact}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="399" y="0" width="133" height="20" uuid="9ea6c756-f556-4644-afe3-da4c5a3892d1"/>
+				<textFieldExpression><![CDATA[$F{user_register_email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="532" y="0" width="133" height="20" uuid="2bcef520-b273-44a4-8d66-d01721346b59"/>
+				<textFieldExpression><![CDATA[$F{user_register_address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="665" y="0" width="133" height="20" uuid="ee41b0c7-93c2-4bc3-9c0e-89b7a3ed9d99"/>
+				<textFieldExpression><![CDATA[$F{user_register_password}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

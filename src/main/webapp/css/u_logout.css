@@ -1,0 +1,78 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: url('images/wallpaper2.jpg') no-repeat center center/cover;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.logout-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logout-box {
+    background: white;
+    padding: 40px;
+    width: 380px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.logout-box h1 {
+    margin-bottom: 15px;
+    color: #2e7d32;
+}
+
+.logout-box p {
+    margin-bottom: 30px;
+    color: #555;
+    font-size: 16px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 45%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+
+.btn.yes {
+    background-color: #2e7d32;
+    color: white;
+}
+
+.btn.yes:hover {
+    background-color: #1b5e20;
+}
+
+
+.btn.no {
+    background-color: #ccc;
+    color: #333;
+}
+
+.btn.no:hover {
+    background-color: #b0b0b0;
+}
+

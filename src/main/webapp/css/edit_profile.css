@@ -1,0 +1,120 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #cfd9df, #e2ebf0);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-container {
+    background: white;
+    width: 450px;
+    margin-left: 470px;
+    padding: 30px;
+    border-radius: 18px;
+    margin-top: 50px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.avatar {
+    width: 85px;
+    height: 85px;
+    background: linear-gradient(135deg, #ff6600, #ff944d);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+}
+
+.profile-header h1 {
+    margin: 8px 0 3px;
+    color: #333;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #777;
+}
+
+.profile-row {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.profile-row label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.profile-row input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.profile-row input:focus {
+    outline: none;
+    border-color: #ff6600;
+}
+
+.profile-buttons {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.profile-buttons button,
+.profile-buttons a {
+    padding: 11px 22px;
+    margin: 6px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.edit-btn {
+    background: linear-gradient(135deg, #ff6600, #ff944d);
+    color: white;
+}
+
+.close-btn {
+    background: #888;
+    color: white;
+}
+
+.profile-buttons button:hover,
+.profile-buttons a:hover {
+    opacity: 0.9;
+}
+
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color:  #2f6f4e;
+    color: white;
+    margin-top: 100px;
+}
+.box p{
+	
+	color: white;
+	text-decoration: none;
+	
+}

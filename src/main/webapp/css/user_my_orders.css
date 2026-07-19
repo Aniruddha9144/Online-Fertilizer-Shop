@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Full height layout */
+html, body {
+    height: 100%;
+}
+
+/* Make body flex container */
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f6f9;
+}
+
+/* Main content grows to push footer down */
+.main-content {
+    flex: 1;
+    width: 100%;
+    padding: 30px 40px;
+}
+
+/* Container full width */
+.container {
+    width: 100%;
+    margin-bottom: 80px;   /* Footer peksha jast */
+}
+
+/* Heading */
+.container h1 {
+    margin-bottom: 25px;
+    color: #2e7d32;
+}
+
+/* Table full width */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* Header style */
+thead {
+    background-color: #2e7d32;
+    color: white;
+}
+
+th {
+    padding: 15px;
+    font-weight: 600;
+}
+
+/* Table cells */
+td {
+    padding: 14px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Hover effect */
+tbody tr:hover {
+    background-color: #f1f8e9;
+}
+
+/* Status colors */
+.delivered {
+    color: green;
+    font-weight: bold;
+}
+
+.pending {
+    color: orange;
+    font-weight: bold;
+}
+
+.cancelled {
+    color: red;
+    font-weight: bold;
+}
+
+/* Cancel button */
+.cancel-btn {
+    padding: 6px 14px;
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.cancel-btn:hover {
+    background-color: #9a0007;
+}
+
+.cancel-btn.disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+
+.footer {
+    background: #2d6a4f;
+    color: white;
+    text-align: center;
+    padding: 15px 12px;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;   /* Fixed height */
+}
+
+
