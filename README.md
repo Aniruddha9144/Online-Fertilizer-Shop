@@ -91,7 +91,7 @@ The User Dashboard provides users with easy access to the main features of the f
 
 The home page also provides a Shop Now option and highlights Organic, Chemical, and Bio Fertilizer Products.
 
-<img width="1344" height="632" alt="Screenshot 2026-08-23 233611" src="https://github.com/user-attachments/assets/2650b021-ee70-4fba-aa48-1c0dbe92c49f" />
+![Uploading Screenshot 2026-08-23 233611.png…]()
 
 
 
@@ -109,8 +109,8 @@ It also displays important system information such as:
 💰 Total Sales
 💬 Feedback
 
+![Uploading Screenshot 2026-03-06 230224.png…]()
 
-<img width="1354" height="625" alt="Screenshot 2026-03-06 230224" src="https://github.com/user-attachments/assets/95388de0-9d16-44a3-86eb-7c49a478235d" />
 
 
 👤 User Dashboard Highlights
