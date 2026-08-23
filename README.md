@@ -113,88 +113,103 @@ It also displays important system information such as:
 
 ![Admin Dashboard](Admin%20Dashboard.png)
 
-
-👤 User Dashboard Highlights
+## 👤 User Dashboard Highlights
 
 The User Dashboard is designed to provide a simple and convenient shopping experience.
 
-Main Options
-🏠 Home – Access the main shop page.
-📚 Categories – Browse fertilizer categories.
-📦 Orders – View user orders.
-🛒 Cart – Manage selected products.
-💬 Feedback – Submit feedback.
-👤 Profile – Manage user profile.
-🚪 Logout – Exit the application.
-Fertilizer Products
+### Main Options
+
+- 🏠 **Home** – Access the main shop page.
+- 📚 **Categories** – Browse fertilizer categories.
+- 📦 **Orders** – View user orders.
+- 🛒 **Cart** – Manage selected products.
+- 💬 **Feedback** – Submit feedback.
+- 👤 **Profile** – Manage user profile.
+- 🚪 **Logout** – Exit the application.
+
+### Fertilizer Products
 
 The home page highlights different types of fertilizer products:
 
-🌱 Organic Fertilizers
-🧪 Chemical Fertilizers
-🌿 Bio Fertilizers
-🔐 Admin Dashboard Highlights
+- 🌱 **Organic Fertilizers**
+- 🧪 **Chemical Fertilizers**
+- 🌿 **Bio Fertilizers**
+
+---
+
+## 🔐 Admin Dashboard Highlights
 
 The Admin Panel provides a centralized interface for monitoring and managing the application.
 
-Main Options
-🏠 Home
-📦 Products
-👨‍🌾 Farmers
-🧾 Orders
-❌ Order Cancel
-🔄 Order History
-📊 Reports
-💬 Feedback
-🚪 Logout
-Dashboard Overview
+### Main Options
+
+- 🏠 **Home**
+- 📦 **Products**
+- 👨‍🌾 **Farmers**
+- 🧾 **Orders**
+- ❌ **Order Cancel**
+- 🔄 **Order History**
+- 📊 **Reports**
+- 💬 **Feedback**
+- 🚪 **Logout**
+
+### Dashboard Overview
 
 The Admin Dashboard displays key information such as:
 
-Dashboard Metric	Displayed Value
-📦 Products	17
-👨‍🌾 Farmers	18
-🧾 Orders	16
-💰 Total Sales	18830.0
-💬 Feedback	6
+| Dashboard Metric | Displayed Value |
+|---|---:|
+| 📦 Products | 17 |
+| 👨‍🌾 Farmers | 18 |
+| 🧾 Orders | 16 |
+| 💰 Total Sales | 18830.0 |
+| 💬 Feedback | 6 |
 
-These values represent the data displayed in the current dashboard screenshot.
+> These values represent the data displayed in the current dashboard screenshot.
 
-🗄️ Database
+---
 
-The application uses MySQL as the database management system for storing and managing application data.
+## 🗄️ Database
+
+The application uses **MySQL** as the database management system for storing and managing application data.
 
 The database is used for operations related to:
 
-User / Farmer Information
-Product Information
-Fertilizer Categories
-Orders
-Order History
-Order Cancellation
-Feedback
-Sales Information
-🚀 How to Run
-Prerequisites
+- 👤 User / Farmer Information
+- 📦 Product Information
+- 🌱 Fertilizer Categories
+- 🧾 Orders
+- 🔄 Order History
+- ❌ Order Cancellation
+- 💬 Feedback
+- 💰 Sales Information
+
+## 🚀 How to Run
+
+### Prerequisites
 
 Make sure the following software is installed:
 
-Java JDK
-Eclipse IDE
-Apache Tomcat
-MySQL
-MySQL Workbench
-Steps
-Clone the repository.
-Open Eclipse IDE.
-Import the project into Eclipse.
-Configure Apache Tomcat Server.
-Create the required database in MySQL.
-Import the required database tables and data.
-Configure the database connection.
-Start the Apache Tomcat Server.
-Run the project from Eclipse.
-Open the application in a web browser.
+- ☕ **Java JDK**
+- 💻 **Eclipse IDE**
+- 🖥️ **Apache Tomcat**
+- 🗄️ **MySQL**
+- 🛠️ **MySQL Workbench**
+
+### Steps
+
+1. **Clone the repository.**
+2. **Open Eclipse IDE.**
+3. **Import the project into Eclipse.**
+4. **Configure Apache Tomcat Server.**
+5. **Create the required database in MySQL.**
+6. **Import the required database tables and data.**
+7. **Configure the database connection.**
+8. **Start the Apache Tomcat Server.**
+9. **Run the project from Eclipse.**
+10. **Open the application in a web browser.**
+
+  
 🎯 Project Objective
 
 The main objective of this project is to develop a simple and efficient Online Fertilizer Shop Management System that allows users/farmers to access fertilizer products and manage their shopping activities online.
