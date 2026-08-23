@@ -94,8 +94,7 @@ The User Dashboard provides users with easy access to the main features of the f
 
 The home page also provides a Shop Now option and highlights Organic, Chemical, and Bio Fertilizer Products.
 
-
-![User Dashboard](user-dashboard.png)
+![User Dashboard](User%20Dashboard.png)
 
 🔐 Admin Dashboard
 
@@ -112,8 +111,7 @@ It also displays important system information such as:
 💬 Feedback
 
 
-![Admin Dashboard](admin-dashboard.png)
-
+![Admin Dashboard](Admin%20Dashboard.png)
 
 
 👤 User Dashboard Highlights
