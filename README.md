@@ -93,7 +93,6 @@ The home page also provides a Shop Now option and highlights Organic, Chemical, 
 
 ![User Dashboard](https://github.com/user-attachments/assets/dce843a3-2c25-4b66-b3ae-a309d8768b17)
 
-
 🔐 Admin Dashboard
 
 The Admin Dashboard provides a centralized interface for managing and monitoring the fertilizer shop.
