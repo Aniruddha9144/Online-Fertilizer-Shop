@@ -91,7 +91,6 @@ The User Dashboard provides users with easy access to the main features of the f
 
 The home page also provides a Shop Now option and highlights Organic, Chemical, and Bio Fertilizer Products.
 
-![Uploading Screenshot 2026-08-23 233611.png…]()
 
 
 
