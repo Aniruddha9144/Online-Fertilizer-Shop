@@ -93,6 +93,7 @@ The home page also provides a Shop Now option and highlights Organic, Chemical, 
 
 
 
+<img width="1344" height="632" alt="Screenshot 2026-08-23 233611" src="https://github.com/user-attachments/assets/12d062db-b294-485f-88ea-663f8cc22c43" />
 
 
 
