@@ -88,7 +88,7 @@ The application follows a **Java Web Application architecture** consisting of se
 
 ---
 
-👤 User Dashboard
+### **👤 User Dashboard**
 
 The User Dashboard provides users with easy access to the main features of the fertilizer shop, including Home, Categories, Orders, Cart, Feedback, Profile, and Logout.
 
@@ -96,22 +96,7 @@ The home page also provides a Shop Now option and highlights Organic, Chemical, 
 
 ![User Dashboard](User%20Dashboard.png)
 
-🔐 Admin Dashboard
 
-The Admin Dashboard provides a centralized interface for managing and monitoring the fertilizer shop.
-
-The dashboard provides access to Home, Products, Farmers, Orders, Order Cancel, Order History, Reports, Feedback, and Logout.
-
-It also displays important system information such as:
-
-📦 Products
-👨‍🌾 Farmers
-🧾 Orders
-💰 Total Sales
-💬 Feedback
-
-
-![Admin Dashboard](Admin%20Dashboard.png)
 
 ## 👤 User Dashboard Highlights
 
@@ -134,6 +119,25 @@ The home page highlights different types of fertilizer products:
 - 🌱 **Organic Fertilizers**
 - 🧪 **Chemical Fertilizers**
 - 🌿 **Bio Fertilizers**
+
+---
+
+### **🔐 Admin Dashboard**
+
+The Admin Dashboard provides a centralized interface for managing and monitoring the fertilizer shop.
+
+The dashboard provides access to Home, Products, Farmers, Orders, Order Cancel, Order History, Reports, Feedback, and Logout.
+
+It also displays important system information such as:
+
+📦 Products
+👨‍🌾 Farmers
+🧾 Orders
+💰 Total Sales
+💬 Feedback
+
+
+![Admin Dashboard](Admin%20Dashboard.png)
 
 ---
 
