@@ -201,17 +201,17 @@ The main objective of this project is to develop a simple and efficient Online F
 
 The system also provides administrators with a centralized platform to manage products, farmers, orders, order history, cancellations, reports, and feedback.
 
-🔮 Future Enhancements
+## 🔮 Future Enhancements
 
 The following features can be added in future versions:
 
-💳 Online Payment Gateway
-📧 Email / SMS Order Notifications
-🔎 Advanced Product Search
-⭐ Product Ratings and Reviews
-📱 Mobile Application
-📈 Advanced Sales Analytics
-🚚 Order Delivery Tracking
-📦 Real-Time Inventory Updates
+- 💳 **Online Payment Gateway**
+- 📧 **Email / SMS Order Notifications**
+- 🔎 **Advanced Product Search**
+- ⭐ **Product Ratings and Reviews**
+- 📱 **Mobile Application**
+- 📈 **Advanced Sales Analytics**
+- 🚚 **Order Delivery Tracking**
+- 📦 **Real-Time Inventory Updates**
 
 
