@@ -84,6 +84,9 @@ The application follows a **Java Web Application architecture** consisting of se
                              │
                        🗄️ MySQL Database
 
+```
+
+---
 
 👤 User Dashboard
 
@@ -92,8 +95,7 @@ The User Dashboard provides users with easy access to the main features of the f
 The home page also provides a Shop Now option and highlights Organic, Chemical, and Bio Fertilizer Products.
 
 
-![User Dashboard](https://raw.githubusercontent.com/Aniruddha9144/Online-Fertilizer-Shop/main/user-dashboard.png)
-
+![User Dashboard](user-dashboard.png)
 
 🔐 Admin Dashboard
 
@@ -110,7 +112,7 @@ It also displays important system information such as:
 💬 Feedback
 
 
-<img width="1354" height="625" alt="Screenshot 2026-03-06 230224" src="https://github.com/user-attachments/assets/3419fe0a-bd76-4dd6-afbe-9d6fc9f2b4f4" />
+![Admin Dashboard](admin-dashboard.png)
 
 
 
